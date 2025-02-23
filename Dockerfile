@@ -20,7 +20,7 @@ RUN npx playwright install chromium
 COPY . .
 
 # 暴露端口 (如果你的 server.js 监听了特定端口，例如 3000)
-# EXPOSE 3000
+EXPOSE 3333
 
 # 定义容器启动时执行的命令
 CMD [ "node", "server.js" ]
