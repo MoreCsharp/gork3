@@ -14,6 +14,10 @@ RUN npm install
 
 # 安装 Playwright 和 Chromium
 RUN npm install playwright
+
+# 使用 npx playwright install-deps 安装依赖
+RUN npx playwright install-deps
+
 RUN npx playwright install chromium
 
 # 复制项目的所有文件到工作目录
